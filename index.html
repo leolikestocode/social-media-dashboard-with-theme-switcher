@@ -1,87 +1,358 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<html lang="en" class="h-100-l w-100-l">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.11.1/tachyons.min.css"
+      integrity="sha512-d0v474klOFSF7qD9WDvyRxAvXaWSxCHDZdnBSZQjo8BpVr6vpjwAgqetpqkKP38DzlOzdVPaLVnzzW1Ba8wB9w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Social Media Dashboard</title>
+  </head>
+  <body class="light-theme h-100-l w-100-l">
+    <main class="bg-very-dark-blue bg-white h-100-l w-100-l">
+      <section class="container center pt4 ph3">
+        <div class="flex flex-column flex-row-l justify-between">
+          <p class="mt0 mb3">
+            <span class="db f3 f2-l b mb1 c-very-dark-blue c-white"
+              >Social Media Dashboard</span
+            >
+            <span class="db f6 b c-dark-grayish-blue c-white opacity-70"
+              >Total Followers: 23,004</span
+            >
+          </p>
+          <div class="border dn-l"></div>
+          <div
+            class="mv3 flex justify-between items-center justify-end-l theme-switcher"
+          >
+            <span class="f6 b c-dark-grayish-blue pr3-l c-white"
+              >Dark Mode</span
+            >
+            <div class="theme-switcher">
+              <input
+                type="checkbox"
+                id="theme-switcher"
+                name="theme-switcher"
+                checked="checkbox"
+                class="dn"
+              />
+              <label for="theme-switcher"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container center pt3 ph3 flex flex-column flex-row-l justify-between items-center"
+      >
+        <div
+          class="card flex flex-column justify-between items-center pa4 mb4 br2 bt bw2 b--facebook bg-light-grayish-blue bg-dark-desaturated-blue w-100"
+        >
+          <div class="flex items-center">
+            <img src="images/icon-facebook.svg" alt="Facebook" />
+            <span class="c-dark-grayish-blue b pl3 f6 c-white opacity-70"
+              >@nathanf</span
+            >
+          </div>
+          <div>
+            <p class="ma0">
+              <span class="db c-very-dark-blue f1 b c-white">1987</span>
+              <span
+                class="db ttu tc f7 c-dark-grayish-blue tracked-mega c-white opacity-70"
+              >
+                Followers
+              </span>
+            </p>
+          </div>
+          <div>
+            <p class="ma0 c-lime-green flex justify-center items-center">
+              <img src="images/icon-up.svg" alt="Icon up" />
+              <span class="pl2 b f6">12 Today</span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="card flex flex-column justify-between items-center pa4 mb4 br2 bt bw2 b--twitter bg-light-grayish-blue bg-dark-desaturated-blue w-100"
+        >
+          <div class="flex items-center">
+            <img src="images/icon-twitter.svg" alt="Twitter" />
+            <span class="c-dark-grayish-blue b pl3 f6 c-white opacity-70"
+              >@nathanf</span
+            >
+          </div>
+          <div>
+            <p class="ma0">
+              <span class="db c-very-dark-blue f1 b c-white">1044</span>
+              <span
+                class="db ttu tc f7 c-dark-grayish-blue tracked-mega c-white opacity-70"
+              >
+                Followers
+              </span>
+            </p>
+          </div>
+          <div>
+            <p class="ma0 c-lime-green flex justify-center items-center">
+              <img src="images/icon-up.svg" alt="Icon up" />
+              <span class="pl2 b f6">99 Today</span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="card flex flex-column justify-between items-center pa4 mb4 br2 bt bw2 b--instagram bg-light-grayish-blue bg-dark-desaturated-blue w-100"
+        >
+          <div class="flex items-center">
+            <img src="images/icon-instagram.svg" alt="Instagram" />
+            <span class="c-dark-grayish-blue b pl3 f6 c-white opacity-70"
+              >@nathanf</span
+            >
+          </div>
+          <div>
+            <p class="ma0">
+              <span class="db c-very-dark-blue f1 b c-white">11k</span>
+              <span
+                class="db ttu tc f7 c-dark-grayish-blue tracked-mega c-white opacity-70"
+              >
+                Followers
+              </span>
+            </p>
+          </div>
+          <div>
+            <p class="ma0 c-lime-green flex justify-center items-center">
+              <img src="images/icon-up.svg" alt="Icon up" />
+              <span class="pl2 b f6">1099 Today</span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="card flex flex-column justify-between items-center pa4 mb4 br2 bt bw2 b--youtube bg-light-grayish-blue bg-dark-desaturated-blue w-100"
+        >
+          <div class="flex items-center">
+            <img src="images/icon-youtube.svg" alt="Youtube" />
+            <span class="c-dark-grayish-blue b pl3 f6 c-white opacity-70"
+              >@nathanf</span
+            >
+          </div>
+          <div>
+            <p class="ma0">
+              <span class="db c-very-dark-blue f1 b c-white">8239</span>
+              <span
+                class="db ttu tc f7 c-dark-grayish-blue tracked-mega c-white opacity-70"
+              >
+                Subscribers
+              </span>
+            </p>
+          </div>
+          <div>
+            <p class="ma0 c-bright-red flex justify-center items-center">
+              <img src="images/icon-down.svg" alt="Icon up" />
+              <span class="pl2 b f6">144 Today</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="container center pt3 ph3 flex flex-column justify-between items-center"
+      >
+        <h3 class="c-dark-grayish-blue b c-white tl w-100 f3 mt0 mb4">
+          Overview Today
+        </h3>
+        <div class="flex flex-column justify-between flex-row-l w-100">
+          <div
+            class="card-small flex justify-between pa4 mb3 mb4-l br2 bg-light-grayish-blue bg-dark-desaturated-blue w-100 w-25-l"
+          >
+            <div class="flex flex-column justify-between">
+              <span class="c-dark-grayish-blue b c-white opacity-70"
+                >Page Views</span
+              >
+              <span class="c-very-dark-blue f3 f2-l b c-white">87</span>
+            </div>
+            <div class="flex flex-column justify-between items-center">
+              <img
+                src="images/icon-facebook.svg"
+                alt="Facebook"
+                width="20"
+                height="20"
+              />
+              <p class="ma0 c-lime-green flex justify-center items-center">
+                <img src="images/icon-up.svg" alt="Icon up" />
+                <span class="pl1 b f6">3%</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="card-small flex justify-between pa4 mb3 mb4-l br2 bg-light-grayish-blue bg-dark-desaturated-blue w-100 w-25-l"
+          >
+            <div class="flex flex-column justify-between">
+              <span class="c-dark-grayish-blue b c-white opacity-70"
+                >Likes</span
+              >
+              <span class="c-very-dark-blue f3 f2-l b c-white">52</span>
+            </div>
+            <div class="flex flex-column justify-between items-center">
+              <img
+                src="images/icon-facebook.svg"
+                alt="Facebook"
+                width="20"
+                height="20"
+              />
+              <p class="ma0 c-bright-red flex justify-center items-center">
+                <img src="images/icon-down.svg" alt="Icon down" />
+                <span class="pl1 b f6">2%</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="card-small flex justify-between pa4 mb3 mb4-l br2 bg-light-grayish-blue bg-dark-desaturated-blue w-100 w-25-l"
+          >
+            <div class="flex flex-column justify-between">
+              <span class="c-dark-grayish-blue b c-white opacity-70"
+                >Likes</span
+              >
+              <span class="c-very-dark-blue f3 f2-l b c-white">5462</span>
+            </div>
+            <div class="flex flex-column justify-between items-center">
+              <img
+                src="images/icon-instagram.svg"
+                alt="Instagram"
+                width="20"
+                height="20"
+              />
+              <p class="ma0 c-lime-green flex justify-center items-center">
+                <img src="images/icon-up.svg" alt="Icon up" />
+                <span class="pl1 b f6">2257%</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="card-small flex justify-between pa4 mb3 mb4-l br2 bg-light-grayish-blue bg-dark-desaturated-blue w-100 w-25-l"
+          >
+            <div class="flex flex-column justify-between">
+              <span class="c-dark-grayish-blue b c-white opacity-70"
+                >Profile Views</span
+              >
+              <span class="c-very-dark-blue f3 f2-l b c-white">52k</span>
+            </div>
+            <div class="flex flex-column justify-between items-center">
+              <img
+                src="images/icon-instagram.svg"
+                alt="Instagram"
+                width="20"
+                height="20"
+              />
+              <p class="ma0 c-lime-green flex justify-center items-center">
+                <img src="images/icon-up.svg" alt="Icon up" />
+                <span class="pl1 b f6">1375%</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-column justify-between flex-row-l w-100">
+          <div
+            class="card-small flex justify-between pa4 mb3 mb4-l br2 bg-light-grayish-blue bg-dark-desaturated-blue w-100 w-25-l"
+          >
+            <div class="flex flex-column justify-between">
+              <span class="c-dark-grayish-blue b c-white opacity-70"
+                >Tetweets</span
+              >
+              <span class="c-very-dark-blue f3 f2-l b c-white">117</span>
+            </div>
+            <div class="flex flex-column justify-between items-center">
+              <img
+                src="images/icon-twitter.svg"
+                alt="Twitter"
+                width="20"
+                height="20"
+              />
+              <p class="ma0 c-lime-green flex justify-center items-center">
+                <img src="images/icon-up.svg" alt="Icon up" />
+                <span class="pl1 b f6">303%</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="card-small flex justify-between pa4 mb3 mb4-l br2 bg-light-grayish-blue bg-dark-desaturated-blue w-100 w-25-l"
+          >
+            <div class="flex flex-column justify-between">
+              <span class="c-dark-grayish-blue b c-white opacity-70"
+                >Likes</span
+              >
+              <span class="c-very-dark-blue f3 f2-l b c-white">507</span>
+            </div>
+            <div class="flex flex-column justify-between items-center">
+              <img
+                src="images/icon-twitter.svg"
+                alt="Twitter"
+                width="20"
+                height="20"
+              />
+              <p class="ma0 c-lime-green flex justify-center items-center">
+                <img src="images/icon-up.svg" alt="Icon up" />
+                <span class="pl1 b f6">553%</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="card-small flex justify-between pa4 mb3 mb4-l br2 bg-light-grayish-blue bg-dark-desaturated-blue w-100 w-25-l"
+          >
+            <div class="flex flex-column justify-between">
+              <span class="c-dark-grayish-blue b c-white opacity-70"
+                >Likes</span
+              >
+              <span class="c-very-dark-blue f3 f2-l b c-white">107</span>
+            </div>
+            <div class="flex flex-column justify-between items-center">
+              <img
+                src="images/icon-youtube.svg"
+                alt="Youtube"
+                width="20"
+                height="20"
+              />
+              <p class="ma0 c-bright-red flex justify-center items-center">
+                <img src="images/icon-down.svg" alt="Icon down" />
+                <span class="pl1 b f6">19%</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="card-small flex justify-between pa4 mb3 mb4-l br2 bg-light-grayish-blue bg-dark-desaturated-blue w-100 w-25-l"
+          >
+            <div class="flex flex-column justify-between">
+              <span class="c-dark-grayish-blue b c-white opacity-70"
+                >Total Views</span
+              >
+              <span class="c-very-dark-blue f3 f2-l b c-white">1407</span>
+            </div>
+            <div class="flex flex-column justify-between items-center">
+              <img
+                src="images/icon-youtube.svg"
+                alt="Youtube"
+                width="20"
+                height="20"
+              />
+              <p class="ma0 c-bright-red flex justify-center items-center">
+                <img src="images/icon-down.svg" alt="Icon down" />
+                <span class="pl1 b f6">12%</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="src/script.js" type="text/javascript"></script>
+  </body>
 </html>

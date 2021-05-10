@@ -1,0 +1,197 @@
+:root {
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youtube: hsl(348, 97%, 39%);
+
+  --dark-theme: linear-gradient(
+    to right,
+    hsl(210, 78%, 56%),
+    hsl(146, 68%, 55%)
+  );
+  --light-theme: hsl(230, 22%, 74%);
+
+  --b--very-dark-blue: hsl(232, 19%, 15%);
+  --dark-desaturated-blue: hsl(228, 28%, 20%);
+  --desaturated-blue: hsl(228, 34%, 66%);
+  --white: hsl(0, 0%, 100%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --light-grayish-blue: hsl(227, 47%, 96%);
+  --dark-grayish-blue: hsl(228, 12%, 44%);
+  --very-dark-blue: hsl(230, 17%, 14%);
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+}
+
+/* Primary */
+.c-lime-green {
+  color: var(--lime-green);
+}
+
+.c-bright-red {
+  color: var(--bright-red);
+}
+
+.b--facebook {
+  border-color: var(--facebook);
+}
+
+.b--twitter {
+  border-color: var(--twitter);
+}
+
+.b--instagram {
+  border-image: var(--instagram);
+  border-image-slice: 1;
+}
+
+.b--youtube {
+  border-color: var(--youtube);
+}
+
+/* Primary */
+/* Dark Theme */
+
+.dark-theme .bg-dark-theme {
+  background: var(--dark-theme);
+}
+
+.dark-theme .bg-very-dark-blue {
+  background: var(--very-dark-blue);
+}
+
+.dark-theme .b--very-dark-blue {
+  border-color: var(--b--very-dark-blue);
+}
+
+.dark-theme .bg-dark-desaturated-blue {
+  background-color: var(--dark-desaturated-blue);
+}
+
+.dark-theme .c-desaturated-blue {
+  color: var(--desaturated-blue);
+}
+
+.dark-theme .c-white {
+  color: var(--white);
+}
+
+.dark-theme .opacity-70 {
+  opacity: 0.7;
+}
+
+/* Dark Theme */
+/* Light Theme */
+
+.light-theme .bg-light-theme {
+  background-color: var(--light-theme);
+}
+
+.light-theme .bg-white {
+  background-color: var(--white);
+}
+
+.light-theme .b--very-pale-blue {
+  border-color: var(--very-pale-blue);
+}
+
+.light-theme .bg-light-grayish-blue {
+  background-color: var(--light-grayish-blue);
+}
+
+.light-theme .c-dark-grayish-blue {
+  color: var(--dark-grayish-blue);
+}
+
+.light-theme .c-very-dark-blue {
+  color: var(--very-dark-blue);
+}
+
+/* Light Theme */
+
+/* General */
+
+.container {
+  max-width: 1472px;
+}
+
+.border {
+  border-top: 2px solid var(--dark-grayish-blue);
+  opacity: 0.3;
+}
+
+.card {
+  height: 230px;
+}
+
+.card-small {
+  height: 130px;
+}
+
+.theme-switcher input[type="checkbox"] + label {
+  background: var(--dark-theme);
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  height: 32px;
+  position: relative;
+  transition: all 0.3s ease-out;
+  width: 64px;
+}
+
+.theme-switcher input[type="checkbox"] + label:before {
+  background-color: var(--very-dark-blue);
+  border-radius: 100%;
+  content: "";
+  display: inline-block;
+  height: 28px;
+  position: absolute;
+  right: 33px;
+  top: 2px;
+  transition: all 0.3s ease-out;
+  width: 28px;
+}
+
+.theme-switcher input[type="checkbox"] + label:after {
+  color: #fff;
+  content: "";
+  font-size: 20px;
+  font-weight: 300;
+  left: 18px;
+  position: absolute;
+  top: 6px;
+  transition: all 0.3s ease-out;
+}
+
+.theme-switcher input[type="checkbox"]:checked + label:before {
+  right: 3px;
+  background-color: var(--white);
+}
+
+.theme-switcher input[type="checkbox"]:checked + label:after {
+  content: "";
+  left: 56px;
+}
+
+@media (min-width: 960px) {
+  .card,
+  .card-small {
+    width: 23.5%;
+  }
+
+  .card:hover,
+  .card-small:hover {
+    transform: scale(1.05);
+  }
+
+  .card-small {
+    height: 140px;
+  }
+}
