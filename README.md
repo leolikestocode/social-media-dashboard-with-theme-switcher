@@ -2,6 +2,7 @@
 
 ## Welcome! 👋
 
+- Live at: [click here](https://leolikestocode.github.io/social-media-dashboard-with-theme-switcher)
 - Front-end coding challenge got from [Frontend Mentor](https://www.frontendmentor.io)
 - Challenge: [Social media dashboard with theme switcher](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H)
 
